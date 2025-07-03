@@ -46,5 +46,8 @@ Inserts records into the `ORDERS` table.
 ## ⚠️ License
 
 -- This file was created by SleekData (https://www.youtube.com/@sleekdata)
+
 -- You may use it for personal, educational purposes only.
+
 -- Unauthorized commercial use of this file or its data, including use in other YouTube videos, is prohibited.
+
