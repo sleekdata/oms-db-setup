@@ -1,6 +1,6 @@
 # SleekMart OMS – Database Setup
 
-This repository contains SQL scripts to set up the **SleekMart Order Management System (OMS)** database in **Snowflake**.
+This repository contains SQL scripts to set up the **SleekData Order Management System (OMS)** database in **Snowflake**.
 
 ---
 
