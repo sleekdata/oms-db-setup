@@ -34,12 +34,16 @@ Inserts records into the `ORDERITEMS` table.
 ### `09_ORDERS.sql`  
 Inserts records into the `ORDERS` table.
 
+### `10_TRAINING.sql`  
+Creates the sales_us, sales_uk, and sales_india tables in the TRAINING schema and loads data into all three tables.
+
 ---
 
 ## 📌 Usage
 
 1. Run `01_INITIALISE.sql` to create the database and schema.
-2. Run `02_CUSTOMERS.sql` to `09_ORDERS.sql` in order to populate each table with sample data.
+2. Run `02_CUSTOMERS.sql` to `09_ORDERS.sql` to populate each table with sample data.
+3. Run `10_TRAINING.sql` to create and populate data into the `TRAINING` schema.
 
 ---
 
