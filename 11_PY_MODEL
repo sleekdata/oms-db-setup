@@ -18,15 +18,15 @@ CREATE OR REPLACE TABLE SLEEKMART_OMS_DEV.TRAINING.TRAVELLERS (
 -- Insert data into TRAVELLERS table
 TRUNCATE TABLE SLEEKMART_OMS_DEV.TRAINING.TRAVELLERS;
 INSERT INTO SLEEKMART_OMS_DEV.TRAINING.TRAVELLERS (TRAVELLER_ID, NAME, DOB, GENDER, CITY) VALUES
-('T001', 'Bob Smith', '15th Jan 1985', 'Male', 'Los Angeles'),
-('T002', 'Alice Johnson', '1990-01-15', 'Female', 'New York'),
+('T001', 'Alice Johnson', '1990-01-15', 'Female', 'New York'),
+('T002', 'Bob Smith', '15th Jan 1985', 'Male', 'Los Angeles'),
 ('T003', 'Charlie Lee', '01/20/1992', 'Other', 'Chicago'),
-('T004', 'Diana Prince', 'March 5, 1988', 'Female', 'New York'),
+('T004', 'Ian Curtis', 'Sunday, May 4, 1986', 'Other', 'Houston'),
 ('T005', 'Ethan Hunt', '1980/07/23', 'Male', 'Houston'),
 ('T006', 'Fiona Apple', '23-09-1983', 'Female', 'Phoenix'),
 ('T007', 'George Martin', '1985.12.01', 'Male', 'Los Angeles'),
 ('T008', 'Hannah Baker', '1987 11 19', 'Female', 'Chicago'),
-('T009', 'Ian Curtis', 'Sunday, May 4, 1986', 'Other', 'Houston'),
+('T009', 'Diana Prince', 'March 5, 1988', 'Female', 'New York'),
 ('T010', 'Julia Roberts', '11 30 1991', 'Female', 'Phoenix'),
 ('T011', 'Kevin Hart', '1993-04-12', 'Male', 'New York'),
 ('T012', 'Laura Croft', '12/12/1989', 'Female', 'Chicago'),
