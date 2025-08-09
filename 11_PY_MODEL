@@ -18,8 +18,8 @@ CREATE OR REPLACE TABLE SLEEKMART_OMS_DEV.TRAINING.TRAVELLERS (
 -- Insert data into TRAVELLERS table
 TRUNCATE TABLE SLEEKMART_OMS_DEV.TRAINING.TRAVELLERS;
 INSERT INTO SLEEKMART_OMS_DEV.TRAINING.TRAVELLERS (TRAVELLER_ID, NAME, DOB, GENDER, CITY) VALUES
-('T001', 'Alice Johnson', '1990-01-15', 'Female', 'New York'),
-('T002', 'Bob Smith', '15th Jan 1985', 'Male', 'Los Angeles'),
+('T001', 'Bob Smith', '15th Jan 1985', 'Male', 'Los Angeles'),
+('T002', 'Alice Johnson', '1990-01-15', 'Female', 'New York'),
 ('T003', 'Charlie Lee', '01/20/1992', 'Other', 'Chicago'),
 ('T004', 'Diana Prince', 'March 5, 1988', 'Female', 'New York'),
 ('T005', 'Ethan Hunt', '1980/07/23', 'Male', 'Houston'),
