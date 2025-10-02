@@ -2887,16 +2887,16 @@ INSERT INTO oms_core.stores (storeid, storename, address, city, state, zipcode, 
 
 
 ------------------------------------------------------------------------------------------------------
--- To set up PostgreSQL as a source/connector for Fivetran data loading, please complete these steps--
+-- To set up PostgreSQL as a source/connector for external data loading, please complete these steps--
 ------------------------------------------------------------------------------------------------------
 
 -- 1. Enable Logical Replication
 -- Steps vary depending on your PostgreSQL variant, so please search online for instructions.
 
 -- 2. Drop and recreate the replication slot (Replication slot keeps track of data changes since the last sync):
-SELECT pg_drop_replication_slot('fivetran_slot');
-SELECT * FROM pg_create_logical_replication_slot('fivetran_slot', 'pgoutput');
+SELECT pg_drop_replication_slot('replication_slot_01');
+SELECT * FROM pg_create_logical_replication_slot('replication_slot_01', 'pgoutput');
 
 -- 3. Drop and recreate the publication (Publication defines which tables are tracked for changes):
-DROP PUBLICATION IF EXISTS fivetran_pub;
-CREATE PUBLICATION fivetran_pub FOR ALL TABLES;
+DROP PUBLICATION IF EXISTS publication_01;
+CREATE PUBLICATION publication_01 FOR ALL TABLES;
