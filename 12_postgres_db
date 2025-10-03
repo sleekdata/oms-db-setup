@@ -7,7 +7,7 @@ CREATE SCHEMA IF NOT EXISTS oms_core;
 
 -- CUSTOMERS table
 CREATE TABLE IF NOT EXISTS oms_core.customers (
-    customerid VARCHAR(10),
+    customerid VARCHAR(10) PRIMARY KEY,
     firstname VARCHAR(50),
     lastname VARCHAR(50),
     email VARCHAR(100),
@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS oms_core.customers (
 
 -- DATES table
 CREATE TABLE IF NOT EXISTS oms_core.dates (
-    date DATE,
+    date DATE PRIMARY KEY,
     day INTEGER,
     month INTEGER,
     year INTEGER,
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS oms_core.dates (
 
 -- EMPLOYEES table
 CREATE TABLE IF NOT EXISTS oms_core.employees (
-    employeeid INTEGER,
+    employeeid INTEGER PRIMARY KEY,
     firstname VARCHAR(50),
     lastname VARCHAR(50),
     email VARCHAR(100),
@@ -49,7 +49,7 @@ CREATE TABLE IF NOT EXISTS oms_core.employees (
 
 -- PRODUCTS table
 CREATE TABLE IF NOT EXISTS oms_core.products (
-    productid INTEGER,
+    productid INTEGER PRIMARY KEY,
     name VARCHAR(100),
     category VARCHAR(50),
     retailprice INTEGER,
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS oms_core.products (
 
 -- SUPPLIERS table
 CREATE TABLE IF NOT EXISTS oms_core.suppliers (
-    supplierid INTEGER,
+    supplierid INTEGER PRIMARY KEY,
     suppliername VARCHAR(100),
     contactperson VARCHAR(100),
     email VARCHAR(100),
@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS oms_core.suppliers (
 
 -- STORES table
 CREATE TABLE IF NOT EXISTS oms_core.stores (
-    storeid VARCHAR(10),
+    storeid VARCHAR(10) PRIMARY KEY,
     storename VARCHAR(50),
     address VARCHAR(100),
     city VARCHAR(50),
@@ -92,12 +92,13 @@ CREATE TABLE IF NOT EXISTS oms_core.orderitems (
     productid INT,
     quantity INT,
     unitprice NUMERIC(10, 2),
-    updated_at TIMESTAMP
+    updated_at TIMESTAMP,
+    PRIMARY KEY (orderid, orderitemid)
 );
 
 -- ORDERS table
 CREATE TABLE IF NOT EXISTS oms_core.orders (
-    orderid INT,
+    orderid INT PRIMARY KEY,
     orderdate DATE,
     customerid VARCHAR(10),
     employeeid INT,
@@ -105,7 +106,6 @@ CREATE TABLE IF NOT EXISTS oms_core.orders (
     status VARCHAR(2),
     updated_at TIMESTAMP
 );
-
 
 
 INSERT INTO oms_core.customers (customerid, firstname, lastname, email, phone, address, city, state, zipcode, updated_at) VALUES
